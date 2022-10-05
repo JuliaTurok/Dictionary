@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Results from "./Results";
 
 export default function LoginForm() {
   let [keyword, setKeyword] = useState("");
+  let [results, setResults] = useState(null);
   function handleResponse(response) {
     console.log(response.data[0]);
+    setResults(response.data[0]);
   }
 
   function handleSubmit(event) {
@@ -19,10 +22,13 @@ export default function LoginForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" placeholder="Keyword" onChange={updateKeyword} />
+    <div>
+      <form onSubmit={handleSubmit}>
+        <input type="text" placeholder="Keyword" onChange={updateKeyword} />
 
-      <input type="submit" value="Submit" />
-    </form>
+        <input type="submit" value="Submit" />
+      </form>
+      <Results results ={results} />
+    </div>
   );
 }

@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header"></header>
       <Dictionary />
-      <a href="https://github.com/JuliaTurok/Dictionary-react-app.git">
+      <a className ="link" href="https://github.com/JuliaTurok/Dictionary-react-app.git">
         open-source code
       </a>
     </div>

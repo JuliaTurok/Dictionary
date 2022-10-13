@@ -20,7 +20,7 @@ a{
 }
 .hint{
   text-align: left;
-  margin-left: 7.8rem;
+  margin-left: 6.7rem;
   font-size: 11px;
   margin-top: 5px;
   
@@ -52,7 +52,7 @@ margin-bottom: 50px;
   margin-right: 10px;
 }
 .Form  input[type="submit"]{
-  width: 10%;
+  width: 15%;
   border-radius: 6px;
   padding: 6px 10px;
   color: #333;

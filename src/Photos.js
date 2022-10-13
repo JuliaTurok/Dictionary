@@ -1,6 +1,7 @@
 import React from "react";
+import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
-import "./App.css"
+
 export default function Photos(props){
     if(props.photos){
         return(<section className="Photos">
@@ -16,7 +17,7 @@ export default function Photos(props){
                       {" "}
                       <img
                         src={photo.src.landscape}
-                        alt="landscape"
+                        alt="what you are looking for"
                         className="img-fluid"
                       />
                     </a>

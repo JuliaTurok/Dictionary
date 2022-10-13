@@ -1,23 +1,110 @@
+body{
+  background: #fef8fe;
+}
+a{ 
+  color:#9670f4;
+}
 .App {
   text-align: center;
   margin-bottom: 100px;
 }
 
-
-
-
-
 .App-header {
   
-  min-height: 30vh;
+  min-height: 15vh;
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
   
 }
+.hint{
+  text-align: left;
+  margin-left: 7.8rem;
+  font-size: 11px;
+  margin-top: 5px;
+}
 
-form {
-  margin-bottom: 100px;
+ .Meaning, .Phonetic, .Form{
+  width: 50%;
+ display: block;
+    margin-left: auto;
+    margin-right: auto;
+background: white;
+padding: 30px;
+border-radius: 8px;
+box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+margin-bottom: 50px;
+}
+.Form h1{
+  font-size: 18px;
+}
+.Form  input[type="text"]{
+  width: 50%;
+  border-radius: 6px;
+  padding: 6px 10px;
+  color: #333;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+}
+.Form  input[type="submit"]{
+  width: 10%;
+  border-radius: 6px;
+  padding: 6px 10px;
+  color: #333;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+}
+
+.Phonetic h2{
+font-size: 36px;
+font-weight: bold;
+line-height: 1.5;
+}
+.Phonetic-container{
+   margin-bottom: 50px;
+}
+.Phonetic a{
+  border:1px solid #ddd;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size:12px;
+  margin-right:10px;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: all 150ms ease-in-out;
+
+}
+.Phonetic a:hover{
+  background: #9670f4;
+  color: white;
+}
+.Phonetic .text{
+  opacity: 0.5;
+  font-weight: bold;
+}
+.Meaning{
+  padding-bottom: 40px;
+}
+.Meaning h3{font-size: 24px;
+font-weight: bold;
+line-height: 1.5;
+margin-top: 0;}
+
+.Meaning .example{
+  color: #70757a;
+  font-style: italic;
+  margin: 15px 0
+}
+.Synonyms{
+  margin: 30px 0 0;
+  padding:0;
+}
+.Synonyms li{
+  display: inline-block;
+  padding-right: 15px;
+  line-height: 1;
+  font-size: 13px;
 }

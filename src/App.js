@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header"></header>
-      <Dictionary />
+      <Dictionary defaultKeyword = "sunset"/>
       <a className="link" href="https://github.com/JuliaTurok/Dictionary.git">
         open-source code
       </a>
